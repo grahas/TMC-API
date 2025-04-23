@@ -76,7 +76,7 @@
 #define TMC5240_SLAVECONF       0x03
 #define TMC5240_INP_OUT         0x04
 #define TMC5240_X_COMPARE       0x05
-#define TMC5240_OTP_PROG        0x06
+#define TMC5240_X_COMPARE_REPEAT 0x06
 #define TMC5240_DRV_CONF        0x0A
 #define TMC5240_GLOBAL_SCALER   0x0B
 #define TMC5240_IHOLD_IRUN      0x10
@@ -259,7 +259,7 @@
 #define TMC5240_DRV_ENN_FIELD                   ((RegisterField) { TMC5240_DRV_ENN_MASK,  TMC5240_DRV_ENN_SHIFT,  TMC5240_INP_OUT, false })
 #define TMC5240_ENCN_CFG6_MASK                  0x20 // INP_OUT // N-channel state
 #define TMC5240_ENCN_CFG6_SHIFT                 5 // N-channel state
-#define TMC5240_ENCN_CFG6_FIELD                 ((RegisterField) { TMC5240_ENCN_CFG6_MASK,  TMC5240_ENCN_CFG6_FIELD,  TMC5240_INP_OUT, false })
+#define TMC5240_ENCN_CFG6_FIELD                 ((RegisterField) { TMC5240_ENCN_CFG6_MASK,  TMC5240_ENCN_CFG6_SHIFT,  TMC5240_INP_OUT, false })
 #define TMC5240_UART_EN_MASK                    0x40 // INP_OUT // 1 = UART interface is enabled
 #define TMC5240_UART_EN_SHIFT                   6 // 1 = UART interface is enabled
 #define TMC5240_UART_EN_FIELD                   ((RegisterField) { TMC5240_UART_EN_MASK,  TMC5240_UART_EN_SHIFT,  TMC5240_INP_OUT, false })
